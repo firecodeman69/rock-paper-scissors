@@ -7,10 +7,10 @@ def determine_hand(filename):
     np.set_printoptions(suppress=True)
 
     # Load the model
-    model = load_model("../keras_model.h5", compile=False)
+    model = load_model("../rock-paper-scissors/Rock_Paper_Scissors/keras_model.h5", compile=False)
 
     # Load the labels
-    class_names = open("../labels.txt", "r").readlines()
+    class_names = open("../rock-paper-scissors/Rock_Paper_Scissors/labels.txt", "r").readlines()
 
     # Create the array of the right shape to feed into the keras model
     # The 'length' or number of images you can put into the array is

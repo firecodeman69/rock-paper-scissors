@@ -29,16 +29,14 @@ confidence_level = 0
 index = """
 <|text-center|
 # Rock, Paper, Scissors Game!
-<|{"RPS_Logo.jpg"}|image|width=25vw|height=25vh|>
+<|{"RPS_Logo.jpg"}|image|width=10vw|height=20vh|>
 
 
 
 ## Select an image from your file system 
-<|{content}|file_selector|extensions=.png, .jpg, .webp|>
 
-## OR
 
-<|Take Picture|button|on_action=take_image|>
+<|{content}|file_selector|extensions=.png, .jpg, .webp|> OR <|Take Picture|button|on_action=take_image|>
 
 <|{content}|image|>
 
@@ -75,6 +73,7 @@ def take_image(state):
 
 app = Gui(page=index)
 
+# if __name__ == "__main__" allows you to call this module only if it's the top level module
 if __name__ == "__main__":
   # app.run(use_reloader=True, port=4001, theme=my_theme)
   app.run(use_reloader=True, port=4001)

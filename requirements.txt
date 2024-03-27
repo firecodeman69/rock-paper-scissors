@@ -1,0 +1,6 @@
+keras
+tensorflow
+pillow
+numpy
+taipy
+cv2

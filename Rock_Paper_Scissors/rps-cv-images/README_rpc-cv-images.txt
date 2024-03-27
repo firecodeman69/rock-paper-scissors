@@ -1,3 +1,5 @@
+This README was created by the source of where I procured the images that were used for training this model.
+
 AUTHOR: Julien de la Bruère-Terreault (drgfreeman@tuta.io)
 
 LICENSE: CC-BY-SA 4.0
